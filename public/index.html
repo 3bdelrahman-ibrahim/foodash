@@ -1,13 +1,77 @@
-<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodDash</title>
+    <title>Foodash - Welcome</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: fadeIn 1.5s ease-in-out;
+            color: #000000;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px 30px;
+            border-radius: 12px;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            color: #222;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            font-weight: bold;
+            animation: bounce 2s infinite;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to FoodDash!</h1>
-    <p>This is the index page of our FoodDash application.</p>
+    <div class="container">
+        <h1>Foodash</h1>
+        <h3>Gebnahalak - BeBaLash</h3>
+    </div>
 </body>
 </html>
