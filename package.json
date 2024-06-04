@@ -2,31 +2,15 @@
   "name": "fooddash",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  }
+,    "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "body-parser": "^1.20.2",
-    "cookie-parser": "^1.4.6",
-    "cors": "^2.8.5",
-    "csurf": "^1.11.0",
-    "dotenv": "^16.4.5",
-    "ejs": "^3.1.9",
-    "express": "^4.19.2",
-    "express-rate-limit": "^7.3.0",
-    "express-validator": "^7.1.0",
-    "helmet": "^7.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongodb": "^6.7.0",
-    "mongoose": "^8.4.1",
-    "multer": "^1.4.5-lts.1",
-    "node-fetch": "^3.3.2",
-    "path": "^0.12.7",
-    "socket.io": "^4.7.5"
+    "express": "^4.19.2"
   }
 }
